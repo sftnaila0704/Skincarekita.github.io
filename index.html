@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skincare Kita</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Skincare Kita</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Beranda</a></li>
+          <li><a href="#products">Produk</a></li>
+          <li><a href="#about">Tentang</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Dapatkan Kulit Sehatmu</h2>
+        <p>Rangkaian perawatan kulit terbaik untuk kecantikan alami setiap hari.</p>
+        <button onclick="showAlert()">Mulai Sekarang</button>
+      </div>
+    </section>
+
+    <section class="signup-form">
+      <h2>Daftar Sekarang</h2>
+      <form id="registrationForm">
+        <label for="name">Nama Lengkap:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="skinType">Jenis Kulit:</label>
+        <select id="skinType" name="skinType">
+          <option value="normal">Normal</option>
+          <option value="kering">Kering</option>
+          <option value="berminyak">Berminyak</option>
+          <option value="sensitif">Sensitif</option>
+        </select>
+
+        <button type="submit">Kirim</button>
+      </form>
+      <p id="formResponse"></p>
+      <div id="skincareRecommendation"></div>
+      <!-- Ini untuk menampilkan rekomendasi -->
+    </section>
+
+    <section id="products" class="products">
+      <h2>Produk Kami</h2>
+      <div class="product-list">
+        <div class="product-card">
+          <img src="images/sabun muka.jpg" alt="Facial wash" />
+          <h3>Facial wash</h3>
+          <p>
+            pembersih wajah dengan pH rendah yang lembut di kulit, diformulasikan dengan 5 jenis Ceramide, Amino Acid, Niacinamide, dan Hyaluronic Acid. Produk ini efektif membersihkan wajah dari kotoran dan minyak tanpa menghilangkan
+            kelembapan alami kulit, sekaligus menjaga dan memperbaiki skin barrier.
+          </p>
+        </div>
+        <div class="product-card">
+          <img src="images/toner.jpg" alt="Toner" />
+          <h3>Toner</h3>
+          <p>
+            toner ringan yang berfungsi untuk menenangkan, melembapkan, dan memperkuat skin barrier. Diformulasikan dengan 5 jenis Ceramide, Centella Asiatica, dan Panthenol, toner ini sangat efektif dalam menghidrasi dan menyeimbangkan
+            kondisi kulit setelah proses cleansing, serta mencegah iritasi.
+          </p>
+        </div>
+        <div class="product-card">
+          <img src="images/moisturizer.jpg" alt="Moisturizer" />
+          <h3>Moisturizer</h3>
+          <p>
+            pelembap berbentuk gel ringan yang diformulasikan khusus untuk memperkuat skin barrier dan menjaga kelembapan kulit secara optimal. Diperkaya dengan 5 jenis Ceramide, Hyaluronic Acid, Centella Asiatica, dan Marine Collagen,
+            pelembap ini membantu menghidrasi kulit secara mendalam sekaligus memperbaiki tekstur dan elastisitas kulit.
+          </p>
+        </div>
+        <div class="product-card">
+          <img src="images/serum.jpg" alt="Serum" />
+          <h3>Serum</h3>
+          <p>
+            serum wajah yang diformulasikan khusus untuk memperbaiki dan memperkuat skin barrier yang rusak. Dengan kombinasi 5 jenis Ceramide, BFL Probiotic, dan Centella Asiatica, serum ini membantu menenangkan kulit sensitif,
+            mengembalikan kelembapan, serta menjaga elastisitas dan kecerahan kulit.
+          </p>
+        </div>
+        <div class="product-card">
+          <img src="images/sunscreen.jpg" alt="Sunscreen" />
+          <h3>Sunscreen</h3>
+          <p>
+            tabir surya dengan formula unik yang menggabungkan manfaat serum dan sunscreen dalam satu produk. Diformulasikan dengan 5 jenis Ceramide, Hyaluronic Acid, dan filter UVA/UVB berkualitas tinggi, sunscreen ini memberikan
+            perlindungan maksimal dari sinar matahari sekaligus merawat dan menjaga kelembapan kulit.
+          </p>
+        </div>
+        <div class="product-card">
+          <img src="images/masker.jpg" alt="Masker" />
+          <h3>Masker</h3>
+          <p>
+            masker wajah dalam bentuk stik praktis yang berfungsi untuk membersihkan pori-pori secara mendalam dan mengangkat kotoran serta komedo.Mengandung Alaska Volcano Clay, Glycolic Acid, Probiotic Complex, dan Collagen, masker ini
+            bekerja menyerap minyak berlebih, mengangkat sel kulit mati, serta membantu menghaluskan dan mengencangkan pori-pori.
+          </p>
+        </div>
+        <div class="product-card">
+          <img src="images/pelling.jpg" alt="Peeling" />
+          <h3>Peeling</h3>
+          <p>
+            peeling ini mengandung kombinasi asam aktif seperti Glycolic Acid, Salicylic Acid, dan Lactobionic Acid yang dirancang untuk menghaluskan tekstur kulit, meminimalkan tampilan pori-pori, dan mendorong pembaharuan kulit. Cairan
+            serum berwarna merah gelap ini dikemas dalam botol kaca frosted dengan aplikator pipet berwarna merah metalik, menunjukkan produk yang siap digunakan untuk perawatan eksfoliasi kulit.
+          </p>
+        </div>
+        <div class="product-card">
+          <img src="images/cousen.jpg" alt="Cushion" />
+          <h3>Cushion</h3>
+          <p>
+            Cushion dengan coverage tinggi namun terasa ringan di kulit.Mengandung skincare ingredients seperti 5X Ceramide, Centella Asiatica, dan Hyaluronic Acid untuk menjaga kelembapan dan memperkuat skin barrier.Diformulasikan dengan
+            Raincoat Protective Film Technology sehingga tahan air dan keringat hingga 12 jam.
+          </p>
+        </div>
+        <div class="product-card">
+          <img src="images/eye cream.jpg" alt="Eye cream" />
+          <h3>Eye cream</h3>
+          <p>
+            Eye cream inovatif dengan aplikator Crystal Rolling Massager 360°,diproduksi dengan teknologi Lift‑Tech™ Jerman (184 permukaan kristal,berputar otomatis saat disentuh kulit).Krim ini membantu mempercepat penyerapan bahan aktif,
+            sekaligus memberikan efek pijat lembut di area mata
+          </p>
+        </div>
+        <div class="product-card">
+          <img src="images/serum acne.jpg" alt="Serum Acne" />
+          <h3>Serum Acne</h3>
+          <p>
+            Serum berfokus mengatasi jerawat dengan 2% Salicylic Acid tipe ACSD, yaitu formulasi kapsul yang melepaskan bahan aktif secara perlahan untuk hasil maksimal tanpa menimbulkan iritasi  reddit.com +15 skintific.com +15
+            watsons.co.id +15 . Kombinasi bahan lain seperti 4% Niacinamide, Pionin, Centella, 5× Ceramide, Peptide, dan Hyaluronic Acid membantu mempercepat penyembuhan jerawat (sekitar 3 hari), mengurangi kemerahan, dan memperbaiki skin
+            barrier
+          </p>
+        </div>
+        <div class="product-card">
+          <img src="images/lipstik.jpg" alt="lipstik" />
+          <h3>Lipstik</h3>
+          <p>
+            Lip serum berbentuk balm ringan yang dirancang untuk melembapkan, mencerahkan, dan meratakan warna bibir. Teksturnya gel/ balm transparan dan meleleh saat diaplikasikan, meninggalkan efek glossy dan bibir terlihat lebih plumpy
+            tanpa rasa lengket.
+          </p>
+        </div>
+        <div class="product-card">
+          <img src="images/retinol.jpg" alt="retinol" />
+          <h3>Retinol</h3>
+          <p>
+            Serum malam dengan 0,1 % Pure Retinol yang diformulasikan untuk membantu regenerasi kulit, menghaluskan tekstur, menyamarkan bekas jerawat dan flek hitam, serta mengontrol minyak berlebih. Dilengkapi dengan teknologi
+            Micro‑Liposome delivery system agar retinol lebih stabil dan mudah diserap tanpa menyebabkan iritasi berlebih.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>Tentang Kami</h2>
+      <p>Kami percaya bahwa setiap orang berhak tampil percaya diri dengan kulit sehat dan bersinar. Produk kami dirancang dengan bahan-bahan alami dan aman untuk semua jenis kulit.</p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Skincare Kita. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
